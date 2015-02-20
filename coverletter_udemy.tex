@@ -1,0 +1,217 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Jason}{Damiani}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(386)~793~6916}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{me@jasondamiani.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.jasondamiani.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{jasondamiani1}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{jdamiani27}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+%\makecvtitle
+%
+%\section{Objective}
+%\cvitem{}{Employ quantitative, technical, and communicative skill as a data scientist}
+%
+%%\cvitem{}{Employ quantitative, technical, and communicative skill as a data analyst}
+%
+%%\cvitem{}{Employ quantitative, technical, and communicative skill as a risk analyst}
+%
+%\section{Experience}
+%%\subsection{Vocational}
+%%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+%%Detailed achievements:%
+%%\begin{itemize}%
+%%\item Achievement 1;
+%%\item Achievement 2, with sub-achievements:
+%%  \begin{itemize}%
+%%  \item Sub-achievement (a);
+%%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%%    \begin{itemize}
+%%    \item Sub-sub-achievement i;
+%%    \item Sub-sub-achievement ii;
+%%    \item Sub-sub-achievement iii;
+%%    \end{itemize}
+%%  \item Sub-achievement (c);
+%%  \end{itemize}
+%%\item Achievement 3.
+%%\end{itemize}}
+%
+%\cventry{2013--2014}{Catastrophe Risk Analyst}{Insight Catastrophe Group}{New York, NY}{}{Provided decision support services to property insurers
+%\begin{itemize}
+%\item Revitalized client reporting by implementing automated runbooks tightly integrated with third party catastrophe risk model databases and APIs using T-SQL scripts and stored procedures, CLR stored procedures, and Python
+%	\begin{itemize}
+%	\item Reduced time to report delivery by 67\%
+%	\end{itemize}
+%\item Re-engineered stored procedures forming the backbone of on demand client single risk analytics to achieve a 75\% reduction in lines of code and run time
+%\item Applied statistical rigor to ad-hoc analyses:
+%	\begin{itemize}
+%	\item Built a series of log analyzing queries to model traffic to production servers as a Poisson Process in order to determine the firm's hardware requirements
+%	\item Conducted a sensitivity analysis on the variable inputs of the AIR CLASIC/2 hurricane model which invalidated insurance product assumptions
+%	\end{itemize}
+%\end{itemize}}
+%
+%\cventry{2012--2013}{CDP Technology Analyst}{JPMorgan Chase}{Tampa, FL}{}{Java developer on the Electronic Financial Services core distributed platform
+%\begin{itemize}
+%\item Identified and corrected Section 508 disability compliance issues
+%\item Detailed and verified remediation to application vulnerabilities assessed by ethical hackers
+%\end{itemize}}
+%
+%\cventry{2012}{Sales Intern}{AxoGen Inc.}{Alachua, FL}{}{Supported the national sales team of a leading regenerative medicine company
+%\begin{itemize}
+%\item Developed an internal ASP .NET website optimized for iPads allowing AxoGen sales representatives to report, view, and plan daily sales activity
+%\item Interfaced directly with executive leadership to develop reporting and analytics built from daily sales activity data to drive corporate strategy 
+%\item Engaged a national sales team by conducting training webinars and performing inventory audits
+%\end{itemize}}
+%
+%\cventry{2011}{Risk IT Intern}{Genworth Financial}{Richmond, VA}{}{Developed key functionality of the Toolset for Risk Analytics and Quantification
+%\begin{itemize}
+%\item Mathematically modeled the problem of fitting insurance portfolio loss distributions
+%\item Performed numerical optimization implementing the model solution in C\#, leveraging a Quasi Newton Solver in the Microsoft Solver Foundation API
+%\item Reduced time to fit distributions from hours to seconds and improved shock value accuracy on the order of millions of dollars over the previously used manual process
+%\end{itemize}}
+%
+%
+%
+%%\subsection{Miscellaneous}
+%%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+%
+%\section{Education}
+%\cventry{2012}{B.S. Industrial and Systems Engineering}{University of Florida}{Gainesville, FL}{\textit{3.8/4.0}}{Cum Laude}  % arguments 3 to 6 can be left empty
+%%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+%
+%%\section{Master thesis}
+%%\cvitem{title}{\emph{Title}}
+%%\cvitem{supervisors}{Supervisors}
+%%\cvitem{description}{Short thesis abstract}
+%
+%%\section{Languages}
+%%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+%%\cvitemwithcomment{Language 2}{Skill level}{Comment}
+%%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+%
+%\section{Skills}
+%\cvitem{Languages}{T-SQL, C\#, Python, Java, VB .NET, VBA, Objective-C}
+%\cvitem{Software}{R, GAMS, Microsoft Office, Arena Simulation, RMS RiskLink, AIR CLASIC/2}
+%\cvitem{Frameworks}{Microsoft Solver Foundation, ASP .NET, Struts2}
+%
+%%\section{Interests}
+%%\cvitem{hobby 1}{Description}
+%%\cvitem{hobby 2}{Description}
+%%\cvitem{hobby 3}{Description}
+%%
+%%\section{Extra 1}
+%%\cvlistitem{Item 1}
+%%\cvlistitem{Item 2}
+%%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+%%
+%%\section{Extra 2}
+%%\cvlistdoubleitem{Item 1}{Item 4}
+%%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+%
+%%\section{References}
+%%\begin{cvcolumns}
+%%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%%\end{cvcolumns}
+%
+%% Publications from a BibTeX file without multibib
+%%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%%\nocite{*}
+%%\bibliographystyle{plain}
+%%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+%
+%% Publications from a BibTeX file using the multibib package
+%%\section{Publications}
+%%\nocitebook{book1,book2}
+%%\bibliographystylebook{plain}
+%%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%%\nocitemisc{misc1,misc2,misc3}
+%%\bibliographystylemisc{plain}
+%%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+%
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Udemy}{}
+\date{February 20, 2015}
+\opening{To Whom it May Concern,}
+\closing{Sincerely,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I have 3+ years experience working in software development and analytics, specifically with the last 1.5 years in risk analytics in the insurance industry.
+
+I am a self starter with a strong passion for decision making and desire to learn new technologies and skills to bolster my personal portfolio of insightful project work.  I am currently focusing my efforts in Python, MongoDB, R, Machine Learning, and data visualization with D3.js as a member of the inaugural Data Analyst Nanodegree program at Udacity.  
+
+I also have solid experience developing both SQL scripts for data analysis and backend stored procedures for production applications.
+
+In my most recent capacity doing risk analytics I achieved the following:
+
+\begin{itemize}
+\item{Overhauled reporting scripts resulting in 67\% reduction in time to delivery}
+\item{Re-engineering stored procedures for risk analytics in a production application to achieve a 75\% reduction in lines of code and run time}
+\item{Performed statistical analyses driving decisions made on insurance products and server hardware}
+\end{itemize}
+
+I am passionate about online education, myself taking a number of courses on multiple platforms including Coursera, Udacity, and eDX.  I hope to bring this passion to a data-driven and growing firm.
+
+I invite you to view my LinkedIn profile (\httplink{www.linkedin.com/in/jasondamiani1/en}) and my personal website (\httplink{www.jasondamiani.com}) where you can find work samples and hobby projects.
+
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
