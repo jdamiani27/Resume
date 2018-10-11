@@ -36,7 +36,7 @@
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{jdamiani27}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][1.2pt]{headshot.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -63,10 +63,10 @@
 
 %\cvitem{}{Employ quantitative, technical, and communicative skill as a risk analyst}
 
-\section{Summary}
-\cvitem[0em]{}{Aspiring Data Scientist with Experience in Insurance, Finance, and Biotechnology}
-\cvlistitem[0em]{3+ years experience in roles including software development, risk analytics, sales, and modeling}
-\cvlistitem{Building core data science competencies with project work in Python, MongoDB, R, and D3.js}
+% \section{Summary}
+% \cvitem[0em]{}{Aspiring Data Scientist with Experience in Insurance, Finance, and Biotechnology}
+% \cvlistitem[0em]{3+ years experience in roles including software development, risk analytics, sales, and modeling}
+% \cvlistitem{Building core data science competencies with project work in Python, MongoDB, R, and D3.js}
 
 \section{Experience}
 %\subsection{Vocational}
@@ -88,38 +88,65 @@
 %\item Achievement 3.
 %\end{itemize}}
 
-\cventry{2013--2014}{Catastrophe Risk Analyst}{Insight Catastrophe Group}{New York, NY}{}{Provided decision support services to property insurers
+\cventry{2017--2018}{Data Engineer}{Citadel}{Raleigh, NC}{}
+{Supported alternative data initiatives for the fundamental equities businesses at a leading hedge fund
 \begin{itemize}
-\item Revitalized client reporting by implementing automated runbooks tightly integrated with third party catastrophe risk model databases and APIs using T-SQL scripts and stored procedures, CLR stored procedures, and Python
+	\item Developed Apache Spark jobs using the PySpark API to extract, transform, and load vendor big data sets
+	\item Orchestrated job flows using Apache Airflow which integrated with AWS EMR, AWS S3, Vertica, and SQL Server
+	\item Asynchronously performed millions of daily HTTP requests to vendor APIs using Python concurrent futures
+	\item Built tooling to wrap internal services providing proxied access to AWS as custom Airflow hooks and operators
+	\item Configured and administered multiple Airflow installations for a large team of data engineers
+\end{itemize}}
+
+\cventry{2015--2017}{Data Scientist}{Cisco Systems}{Research Triangle, NC}{}
+{Technical Lead of a data science team within the Operational Architecture organization
+\begin{itemize}
+	\item Optimized the pricing structure charged for loaned demo hardware using a model built with Palisade Evolver
 	\begin{itemize}
-	\item Reduced time to report delivery by 67\%
+		\item Reversed operating budget from deficit to surplus with a net revenue change of roughly \$15 million
 	\end{itemize}
-\item Re-engineered stored procedures forming the backbone of on demand client single risk analytics to achieve a 75\% reduction in lines of code and run time
-\item Applied statistical rigor to ad-hoc analyses:
+	\item Developed a methodology to attribute replacement parts to warranty claims across disparate Oracle systems
 	\begin{itemize}
-	\item Analyzed logs to model server traffic as a Poisson Process in order to determine the firm's hardware requirements
-	\item Conducted a sensitivity analysis on the variable inputs to the AIR CLASIC/2 hurricane model
+		\item Increased order line level matching from roughly 70\% to over 99\%
 	\end{itemize}
+	\item Generalized moving data between heterogeneous relational databases in a multithreaded load-balanced pattern
+	\begin{itemize}
+		\item Initially implemented in Pentaho Data Integration; redeveloped using the SQLAlchemy ORM in Python
+	\end{itemize}
+􏰂	\item Predicted time to close customer support cases using machine learning models trained with scikit-learn in Python
+	\item Provided mentorship and guidance through technical reviews of team project work and leadership of hackathons
+	\item Administered PostgreSQL and Microsoft SQL Server installations for a large team of data scientists
 \end{itemize}}
 
-\cventry{2012--2013}{CDP Technology Analyst}{JPMorgan Chase}{Tampa, FL}{}{Java developer on the Electronic Financial Services core distributed platform
+\cventry{2013--2014}{Catastrophe Risk Analyst}{Insight Catastrophe Group}{New York, NY}{}
+{Provided decision support services to property insurers
 \begin{itemize}
-\item Identified and corrected Section 508 disability compliance issues
-\item Detailed and verified remediation to application vulnerabilities assessed by ethical hackers
+	\item Reduced report delivery time by 67\% using automated T-SQL scripts, SQL CLR stored procedures, and Python
+	\item Refactored stored procedures calculating risk analytics to achieve 75\% reduction in lines of code and run time
+	\item Analyzed logs to model server traffic as a Poisson Process in order to determine hardware requirements
+	\item Conducted sensitivity analyses on the variable inputs to the AIR CLASIC/2 hurricane model
 \end{itemize}}
 
-\cventry{2012}{Sales Intern}{AxoGen Inc.}{Alachua, FL}{}{Supported the national sales team of a leading regenerative medicine company
+\cventry{2012--2013}{Technology Analyst}{JPMorgan Chase}{Tampa, FL}{}
+{Java developer on the Electronic Financial Services core distributed platform
 \begin{itemize}
-\item Developed an ASP .NET website allowing sales representatives to report, view, and plan daily sales activity
-\item Interfaced with executives to develop daily sales activity reports and analytics to drive corporate strategy 
-\item Engaged a national sales team by conducting training webinars and performing inventory audits
+	\item Identified and corrected Section 508 disability compliance issues
+	\item Detailed and verified remediation to application vulnerabilities assessed by ethical hackers
 \end{itemize}}
 
-\cventry{2011}{Risk IT Intern}{Genworth Financial}{Richmond, VA}{}{Developed key functionality of the Toolset for Risk Analytics and Quantification
+% \cventry{2012}{Sales Intern}{AxoGen}{Alachua, FL}{}
+% {Supported the national sales team of a leading regenerative medicine company
+% \begin{itemize}
+% 	\item Developed an ASP .NET website allowing sales representatives to report, view, and plan daily sales activity
+% 	\item Interfaced with executives to develop daily sales activity reports and analytics to drive corporate strategy
+% \end{itemize}}
+
+\cventry{2011}{Risk IT Intern}{Genworth Financial}{Richmond, VA}{}
+{Developed key functionality of the Toolset for Risk Analytics and Quantification
 \begin{itemize}
-\item Mathematically modeled the problem of fitting insurance portfolio loss distributions
-\item Performed numerical optimization implementing the model solution in C\#, leveraging a Quasi Newton Solver in the Microsoft Solver Foundation API
-\item Reduced time to fit distributions from hours to seconds and improved shock value accuracy on the order of millions of dollars over the previously used manual process
+	\item Mathematically modeled the problem of fitting insurance portfolio loss distributions
+	\item Implemented a C\# module to solve the model using a Quasi Newton method in the Microsoft Solver Foundation API
+	\item Reduced time to fit distributions from hours to seconds and improved shock value accuracy by millions of dollars
 \end{itemize}}
 
 
@@ -128,7 +155,6 @@
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 \section{Education}
-\cventry{2015}{Data Analyst Nanodegree}{Udacity}{}{}{Inaugural class}
 \cventry{2012}{B.S. Industrial and Systems Engineering}{University of Florida}{Gainesville, FL}{\textit{3.8/4.0}}{Cum Laude}  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
@@ -142,13 +168,16 @@
 %\cvitemwithcomment{Language 2}{Skill level}{Comment}
 %\cvitemwithcomment{Language 3}{Skill level}{Comment}
 
-\section{\httplink[Projects]{www.jasondamiani.com/projects/}}
-\cvitem{}{\textbf{Analyzing MTA Subway Data.} Answering the question "do more people ride the NYC subway when it rains?". \textit{Python, Pandas, NumPy, ordinary least squares regression, ggplot}}
-\cvitem{}{\textbf{Data Wrangling OpenStreetMaps Data.} Auditing, cleaning, transforming, and exploring user generated mapping data. \textit{Python, XML, JSON, MongoDB}}
+\section{Projects}
+\cvitem{}{\textbf{PyRaceView.} Developed a Python package to extract detailed GPS data during races from NASCAR RaceView.
+Required reverse engineering a Flash web application to interpret an encoded byte stream from a websocket. Extensive use of NumPy for ctypes, buffer reading, and bitwise arithmetic.
+\href{https://github.com/jdamiani27/pyraceview}{\textit{\underline{www.github.com/jdamiani27/pyraceview}}}}
+\cvitem{}{\textbf{Scraping Racing Reference.} Retrieved, cleaned, and restructured historical NASCAR race results data for analysis using Requests, BeautifulSoup, and Pandas.
+\href{http://jasondamiani.com/2018/06/05/racing-reference-data.html}{\textit{\underline{www.jasondamiani.com/2018/06/05/racing-reference-data.html}}}}
 
 \section{Skills}
-\cvitem{Languages}{Python, T-SQL, MongoDB, R, C\#, Java, VB .NET, VBA, Objective-C}
-\cvitem{Technologies}{MongoDB, Hadoop, Microsoft Solver Foundation, ASP .NET}
+\cvitem{Languages}{Python, SQL, C\#, Java, VB .NET, VBA}
+\cvitem{Technologies}{Apache Spark, Apache Airflow, Hadoop, Palisade DecisionTools, Pandas, Excel, Django, ASP .NET, Git}
 \cvitem{Concepts}{Operations Research, Mathematical Modeling, Machine Learning}
 
 %\section{Interests}
