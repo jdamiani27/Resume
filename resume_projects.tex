@@ -1,10 +1,3 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
 
 \documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
@@ -88,7 +81,16 @@
 %\item Achievement 3.
 %\end{itemize}}
 
-\cventry{2018--Present}{Data Engineer}{Vituity}{Durham, NC}{}
+\cventry{2019--Present}{Data Scientist}{Cisco Systems}{Research Triangle, NC}{}
+{Transforming Customer and Partner data operations
+\begin{itemize}
+	\item Architected workflows to migrate 1+ Billion lines of installbase data from Oracle to Snowflake for analysis
+	\item Implemented a Python Flask based API to orchestrate and monitor thousands of monthly Prefect jobs
+	\item Developed a Python package to migrate data between heterogenous databases in parallel using SQLAlchemy and PyArrow
+\end{itemize}
+}
+
+\cventry{2018--2019}{Data Engineer}{Vituity}{Durham, NC}{}
 {Full-stack engineer on the Data Operations team at a physician-owned healthcare practice management group
 \begin{itemize}
 	\item Retrieved clinical data using API integration and web scraping techniques in Python
@@ -117,8 +119,7 @@
 	\begin{itemize}
 		\item Increased order line level matching from roughly 70\% to over 99\%
 	\end{itemize}
-	\item Developed a tool to parallelize moving data between heterogenous databases with SQLAlchemy in Python
-􏰂	\item Predicted time to close customer support cases using machine learning models trained with scikit-learn in Python
+	\item Predicted time to close customer support cases using machine learning models trained with scikit-learn in Python
 	\item Provided mentorship and guidance through technical reviews of team project work and leadership of hackathons
 	\item Administered PostgreSQL and Microsoft SQL Server installations for a large team of data scientists
 \end{itemize}}
@@ -132,8 +133,8 @@
 	\item Conducted sensitivity analyses on the variable inputs to the AIR CLASIC/2 hurricane model
 \end{itemize}}
 
-\cventry{2012--2013}{Technology Analyst}{JPMorgan Chase}{Tampa, FL}{}
-{Java developer on the Electronic Financial Services core distributed platform}
+\cventry{2012--2013}{Technology Analyst}{JPMorgan Chase}{Tampa, FL}{}{}
+% {Java developer on the Electronic Financial Services core distributed platform}
 % {Java developer on the Electronic Financial Services core distributed platform
 % \begin{itemize}
 % 	\item Identified and corrected Section 508 disability compliance issues
@@ -174,14 +175,14 @@
 %\cvitemwithcomment{Language 3}{Skill level}{Comment}
 
 \section{Projects}
-\cvitem{}{\textbf{PyRaceView.} Extracted GPS data from NASCAR RaceView. Reverse engineered a Flash application to decode byte streams from a websocket using NumPy for bitwise arithmetic.
+\cvitem{}{\textbf{PyRaceview.} Python package to extract data such as car gps position, throttle, and brake from NASCAR Raceview.
 \href{https://github.com/jdamiani27/pyraceview}{\textit{\underline{www.github.com/jdamiani27/pyraceview}}}}
-\cvitem{}{\textbf{Scraping Racing Reference.} Retrieved, cleaned, and restructured historical NASCAR race results data for analysis using Requests, BeautifulSoup, and Pandas.
-\href{http://jasondamiani.com/2018/06/05/racing-reference-data.html}{\textit{\underline{www.jasondamiani.com/2018/06/05/racing-reference-data.html}}}}
+% \cvitem{}{\textbf{Scraping Racing Reference.} Retrieved, cleaned, and restructured historical NASCAR race results data for analysis using Requests, BeautifulSoup, and Pandas.
+% \href{http://jasondamiani.com/2018/06/05/racing-reference-data.html}{\textit{\underline{www.jasondamiani.com/2018/06/05/racing-reference-data.html}}}}
 
 \section{Skills}
 \cvitem{Languages}{Python, SQL, Javascript}
-\cvitem{Technologies}{Apache Spark, Apache Airflow, Hadoop, Excel, Git, React Native, SQL Server, PostgreSQL}
+\cvitem{Technologies}{Prefect, Apache Spark, Apache Airflow, Hadoop, Excel, Git, React Native, SQL Server, PostgreSQL}
 \cvitem{Concepts}{Operations Research, Mathematical Modeling, Machine Learning, Deep Learning}
 
 %\section{Interests}
@@ -246,6 +247,3 @@
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
-
-
-%% end of file `template.tex'.
